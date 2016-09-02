@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>File Picker</title>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+    <script src="http://apis.google.com/js/client.js"></script>
+    <script src="http://apis.google.com/js/api.js"></script>
+    <script src="google-picker.js"></script>
+    <script src="app.js"></script>
+    <style>
+    </style>
+  </head>
+  <body>
+    <div ng-app="filePicker" ng-controller="mainController" class="text-center">
+      <div><img src="images\abwp-logo-lockup.svg" height="128" width="128" /></div>
+      <button href="javascript:;" lk-google-picker on-picked="onPicked(docs)" on-loaded="onLoaded()" on-cancel="onCancel()" class="btn btn-primary">
+        Open my Google Drive
+      </button>
+    </div>
+  </body>
+</html>
